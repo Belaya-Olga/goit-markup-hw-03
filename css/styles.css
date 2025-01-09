@@ -41,16 +41,17 @@ p {
 section {
     padding: 120px 156px;
 }
+
 .container-head {
-    max-width: 1158;
+    width: 1158px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     flex-direction: row;
     padding: 0 15px;
     margin: 0 auto;
     height: auto;
-    border: 1px solid #000;
+    border-bottom: 1px solid #e7e9fc;
 }
 .nav-bar {
     display: flex;
@@ -136,15 +137,17 @@ section {
 .contacts .cont-link:focus {
     color: #404bbf;
 }
-
-.first {
-    background-color: #2e2f42;
-    height: 600px;
+.container-first {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    padding: 120px 156px;
+    align-items: center;
+}
+
+.first {
+    background-color: #2e2f42;
+    padding: 188px 0;
+    height: 600px
 }
 
 .first .main-header {
@@ -169,13 +172,11 @@ section {
     letter-spacing: 0.04em;
     cursor: pointer;
     text-align: center;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 10px;
+    display: block;
+    max-width: 169px;
+    height: 56px;
     border-radius: 4px;
-    padding: 16px 32px;
+    border: none;
 }
 
 .knob:hover {
@@ -186,14 +187,30 @@ section {
     background-color: #404BBF;
 }
 .second {
-    padding: 120px 156px;
+    padding: 120px 0;
+
 }
+.container-second h2{
+    .visually-hidden 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  white-space: nowrap;
+        
+}
+
 .value-list {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction:  row;
     gap: 24px;
+    width: calc((100% - 72px) / 4))
 }
 .value-list li {
     display: flex;
@@ -218,15 +235,17 @@ section {
     line-height: 1.5em;
     letter-spacing: 0.02em;
 }
-
-.third {
-    background-color: #F4F4FD;
+.container-third {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.third {
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
 .team-header {
     color: #2e2f42;
     font-size: 36px;
@@ -237,6 +256,7 @@ section {
     text-transform: capitalize;
     justify-content: center;
     align-items: center;
+    margin-bottom: 72px;
 
 }
 .third-list{
@@ -293,9 +313,10 @@ section {
     justify-content: flex-start;
     flex-direction: column;
     align-items:flex-start;
-    padding: 120px 156px;
+    padding: 120px 0;
     height: auto;
 }
+.container-fourth
 
 .portf-header {
     color: #2e2f42;
@@ -305,7 +326,7 @@ section {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    margin: auto;
+    margin-bottom: 72px;
 }
 .portf-list {
     display: flex;
@@ -329,8 +350,11 @@ section {
 
 .foot {
     background-color: #2E2F42;
+    padding: 100px 0;
+}
+.container-foot {
     display: block;
-    padding: 100px 156px;
+    padding-right: 156px;
 }
 
 .text-two {
@@ -351,10 +375,7 @@ section {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
+    display: inline-block;
     gap: 0px;
     margin-bottom: 16px;
 }
