@@ -3,6 +3,11 @@ body {
     color: #434455;
     background-color: #FFFFFF;
     width: 1440px;
+    padding-left: 0;
+    padding-right: 0,
+    margin-left: 0;
+    margin-right: 0;
+
 }
 
 a {
@@ -32,32 +37,27 @@ p {
     box-sizing: border-box;
 }
 .container {
-    max-width: 1440px;
-    padding-left: 0;
-    padding-right: 0,
-    margin-left: 0;
-    margin-right: 0;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: auto;
+   
 }
 section {
     padding: 120px 156px;
 }
-
-.container-head {
-    width: 1158px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    padding: 0 15px;
-    margin: 0 auto;
-    height: auto;
+.header {
     border-bottom: 1px solid #e7e9fc;
+}   
+.header-container{
+    display: flex;
+    justify-content: space-between;
 }
 .nav-bar {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
-    flex-direction: row;
+    padding: 24px 0;
 }
 .nav-bar .nav-list {
     display: flex;
@@ -87,7 +87,6 @@ section {
     line-height: 1.5em;
     letter-spacing: 0.02em;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .nav-main .studio {
@@ -116,11 +115,13 @@ section {
 
 .contacts {
     font-style: normal;
-    margin-left: auto;
  }
  .address {
     display: flex;
+    align-items: center;
+    padding-top: 24px;
     gap: 40px;
+    margin-left: auto;
  }
 
 .contacts .cont-link {
@@ -173,10 +174,10 @@ section {
     cursor: pointer;
     text-align: center;
     display: block;
-    max-width: 169px;
     height: 56px;
     border-radius: 4px;
     border: none;
+    min-width: 169px
 }
 
 .knob:hover {
@@ -190,8 +191,7 @@ section {
     padding: 120px 0;
 
 }
-.container-second h2{
-    .visually-hidden 
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -200,8 +200,7 @@ section {
     border: 0;
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
-  white-space: nowrap;
-        
+  white-space: nowrap;     
 }
 
 .value-list {
@@ -210,14 +209,14 @@ section {
     justify-content: flex-start;
     flex-direction:  row;
     gap: 24px;
-    width: calc((100% - 72px) / 4))
 }
-.value-list li {
+.va-li {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     gap: 8px;
+    width: calc((100% - 72px) / 4))
 }
 
 .value-header {
@@ -226,6 +225,8 @@ section {
     font-weight: 500;
     line-height: 1.2em;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .value-text {
@@ -234,8 +235,9 @@ section {
     font-weight: 400;
     line-height: 1.5em;
     letter-spacing: 0.02em;
+    text-align: center;
 }
-.container-third {
+.third-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,7 +264,7 @@ section {
 .third-list{
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 24px;
     margin-top: 72px;
     height: auto;
 }
@@ -277,15 +279,16 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: calc((100% - 72px) / 4));
+    border-radius: 0 0 4px 4px;
 }
-.value-header,
-.value-text {
+.team-name {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 8px;
-    padding: 16px 32px;
+    padding: 32px 0;
     margin: auto;
     
 }
@@ -316,7 +319,6 @@ section {
     padding: 120px 0;
     height: auto;
 }
-.container-fourth
 
 .portf-header {
     color: #2e2f42;
@@ -334,18 +336,16 @@ section {
     flex-wrap: wrap;
     gap: 24px;
     margin-top: 72px;
+    row-gap: 48px;
     }
-.portf-list li {
+.team-list {
     width: calc(( 100% - 48px ) / 3);
 }
-.team,
-.team-text {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-    margin: 32px auto 32px 16px;
+.about-app {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 
 .foot {
@@ -354,7 +354,7 @@ section {
 }
 .container-foot {
     display: block;
-    padding-right: 156px;
+
 }
 
 .text-two {
