@@ -231,6 +231,7 @@ section {
     letter-spacing: 0.02em;
     margin-bottom: 8px;
     text-align: center;
+    width: calc((100% - 72px) /4);
 }
 
 .value-text {
