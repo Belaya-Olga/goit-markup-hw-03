@@ -171,7 +171,7 @@ section {
     font-weight: 800;
     line-height: 1.07em;
     letter-spacing: 0.02em;
-    margin-bottom: 48px;
+    padding-bottom: 48px;
     margin: 0 auto;
     max-width: 496px;
 
@@ -224,21 +224,11 @@ section {
 
 .value-list {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction:  row;
     gap: 24px;
 }
 .va-li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
     width: calc((100% - 72px) / 4);
 }
-
-/*-------------section third---------------*/
 
 .value-header {
     color: #2e2f42;
@@ -246,8 +236,6 @@ section {
     font-weight: 500;
     line-height: 1.2em;
     letter-spacing: 0.02em;
-    text-align: center;
-    margin-bottom: 8px;
 }
 
 .value-text {
@@ -256,9 +244,8 @@ section {
     font-weight: 400;
     line-height: 1.5em;
     letter-spacing: 0.02em;
-    text-align: center;
 }
-
+/*-------------section third---------------*/
 .third-container {
     display: flex;
     flex-direction: column;
