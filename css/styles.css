@@ -190,7 +190,7 @@ section {
     height: 56px;
     border-radius: 4px;
     border: none;
-    min-width: auto;
+    min-width: 169px;
     margin: 24px auto;
 
 }
@@ -247,6 +247,7 @@ section {
     line-height: 1.2em;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .value-text {
@@ -279,7 +280,7 @@ section {
     text-transform: capitalize;
     justify-content: center;
     align-items: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 
 }
 .third-list{
